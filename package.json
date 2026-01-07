@@ -1,0 +1,28 @@
+{
+  "name": "pure-html-for-rag",
+  "version": "1.0.0",
+  "description": "Aggressively clean HTML for RAG, LLM ingestion, and semantic extraction",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Page-Replica/pure-html-for-rag.git"
+  },
+  "keywords": [
+    "rag",
+    "llm",
+    "html",
+    "scraping",
+    "clean-html",
+    "ai",
+    "content-extraction"
+  ],
+  "author": "page-replica.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Page-Replica/pure-html-for-rag/issues"
+  },
+  "homepage": "https://github.com/Page-Replica/pure-html-for-rag#readme"
+}
