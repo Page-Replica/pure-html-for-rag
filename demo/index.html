@@ -275,6 +275,103 @@
       border-radius: 4px;
       transition: width 0.3s ease;
     }
+    .promo-card {
+      margin: 30px;
+      padding: 40px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .promo-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+      animation: pulse 3s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.5; }
+      50% { transform: scale(1.1); opacity: 0.3; }
+    }
+    .promo-content {
+      position: relative;
+      z-index: 1;
+    }
+    .promo-icon {
+      font-size: 3em;
+      margin-bottom: 20px;
+      display: block;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .promo-title {
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .promo-description {
+      font-size: 1.1em;
+      margin-bottom: 25px;
+      opacity: 0.95;
+      line-height: 1.6;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .promo-features {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    .promo-feature {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95em;
+      background: rgba(255,255,255,0.15);
+      padding: 10px 20px;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+    }
+    .promo-cta {
+      display: inline-block;
+      padding: 15px 40px;
+      background: white;
+      color: #667eea;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.1em;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      border: 3px solid transparent;
+    }
+    .promo-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+      background: rgba(255,255,255,0.95);
+    }
+    .promo-cta:active {
+      transform: translateY(-1px);
+    }
+    .promo-subtext {
+      margin-top: 15px;
+      font-size: 0.85em;
+      opacity: 0.8;
+    }
     footer {
       padding: 20px 30px;
       text-align: center;
@@ -449,6 +546,21 @@
         <button class="example-btn" data-example="blog">Blog Article</button>
         <button class="example-btn" data-example="ecommerce">E-commerce</button>
         <button class="example-btn" data-example="complex">Complex Layout</button>
+      </div>
+    </div>
+
+    <div class="promo-card">
+      <div class="promo-content">
+        <span class="promo-icon">🚀</span>
+        <h2 class="promo-title">Need to Process Thousands of Pages?</h2>
+        <p class="promo-description">
+          Scale your HTML cleaning with <strong>Page Replica Structured</strong> —  cleans, and structures web content into pristine JSON, Markdown, or HTML. Perfect for building RAG pipelines, training datasets, or content analysis at scale.
+        </p>
+
+        <a href="https://page-replica.com/structured/live-demo" target="_blank" class="promo-cta">
+          Try Live Demo — Free
+        </a>
+        <p class="promo-subtext">No credit card required • Process real websites instantly</p>
       </div>
     </div>
 
