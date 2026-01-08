@@ -1,10 +1,10 @@
-# pure-html-for-rag
+# @page-replica/pure-html-for-rag
 
 <div align="center">
 
-[![npm version](https://badge.fury.io/js/pure-html-for-rag.svg)](https://www.npmjs.com/package/pure-html-for-rag)
+[![npm version](https://badge.fury.io/js/%40page-replica%2Fpure-html-for-rag.svg)](https://www.npmjs.com/package/@page-replica/pure-html-for-rag)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm downloads](https://img.shields.io/npm/dm/pure-html-for-rag.svg)](https://www.npmjs.com/package/pure-html-for-rag)
+[![npm downloads](https://img.shields.io/npm/dm/%40page-replica%2Fpure-html-for-rag.svg)](https://www.npmjs.com/package/@page-replica/pure-html-for-rag)
 
 **Aggressively clean HTML for RAG pipelines and LLM ingestion** 🧹✨
 
@@ -33,13 +33,13 @@ Modern web pages are cluttered with tracking scripts, analytics, styling, ads, a
 ## Installation
 
 ```bash
-npm install pure-html-for-rag
+npm install @page-replica/pure-html-for-rag
 ```
 
 ## Quick Start
 
 ```js
-const { cleanHtml } = require("pure-html-for-rag");
+const { cleanHtml } = require("@page-replica/pure-html-for-rag");
 
 const rawHtml = `
 	<html>
@@ -67,7 +67,7 @@ const cleaned = cleanHtml(rawHtml);
 Clean HTML before chunking and embedding web content for vector databases like Pinecone, Weaviate, or ChromaDB.
 
 ```js
-const { cleanHtml } = require("pure-html-for-rag");
+const { cleanHtml } = require("@page-replica/pure-html-for-rag");
 const fetch = require("node-fetch");
 
 async function indexWebPage(url) {
@@ -85,7 +85,7 @@ async function indexWebPage(url) {
 Reduce token costs when feeding web content to GPT-4, Claude, or other LLMs.
 
 ```js
-const { cleanHtml } = require("pure-html-for-rag");
+const { cleanHtml } = require("@page-replica/pure-html-for-rag");
 const puppeteer = require("puppeteer");
 
 async function scrapeForLLM(url) {
@@ -111,7 +111,7 @@ async function scrapeForLLM(url) {
 Extract clean, structured content from websites for data analysis or content migration.
 
 ```js
-const { cleanHtml } = require("pure-html-for-rag");
+const { cleanHtml } = require("@page-replica/pure-html-for-rag");
 const axios = require("axios");
 
 async function extractArticle(url) {
@@ -144,7 +144,7 @@ Returns a minimised HTML string containing only textual content and headings.
 Create a reusable cleaner with baked-in defaults:
 
 ```js
-const { createCleaner } = require("pure-html-for-rag");
+const { createCleaner } = require("@page-replica/pure-html-for-rag");
 
 const clean = createCleaner({ allowedAttributeTags: [] });
 const output = clean(rawHtml, { collapseWhitespace: false });
@@ -161,7 +161,7 @@ You can use this library in the browser by including the bundled version:
   <title>HTML Cleaner Demo</title>
 </head>
 <body>
-  <script src="https://unpkg.com/pure-html-for-rag@latest/demo/pure-html-for-rag.bundle.js"></script>
+  <script src="https://unpkg.com/@page-replica/pure-html-for-rag@latest/demo/pure-html-for-rag.bundle.js"></script>
   <script>
     const { cleanHtml } = window.pureHtmlForRag;
     
@@ -177,7 +177,7 @@ You can use this library in the browser by including the bundled version:
 Or use with a module bundler (Webpack, Rollup, Vite):
 
 ```js
-import { cleanHtml } from 'pure-html-for-rag';
+import { cleanHtml } from '@page-replica/pure-html-for-rag';
 
 const cleaned = cleanHtml(document.body.innerHTML);
 ```
@@ -188,7 +188,7 @@ const cleaned = cleanHtml(document.body.innerHTML);
 
 ```js
 const puppeteer = require("puppeteer");
-const { cleanHtml } = require("pure-html-for-rag");
+const { cleanHtml } = require("@page-replica/pure-html-for-rag");
 
 async function scrapeAndClean(url) {
   const browser = await puppeteer.launch();
@@ -216,7 +216,7 @@ async function scrapeAndClean(url) {
 ### Batch Processing
 
 ```js
-const { createCleaner } = require("pure-html-for-rag");
+const { createCleaner } = require("@page-replica/pure-html-for-rag");
 
 const cleaner = createCleaner({
   collapseWhitespace: true,
@@ -245,7 +245,7 @@ async function processMultiplePages(urls) {
 ### Custom Cleaning Rules
 
 ```js
-const { cleanHtml } = require("pure-html-for-rag");
+const { cleanHtml } = require("@page-replica/pure-html-for-rag");
 
 // Minimal cleaning - keep everything except scripts
 const minimal = cleanHtml(html, {
@@ -364,6 +364,6 @@ https://page-replica.com/structured/live-demo
 
 **Made with ❤️ for the AI community**
 
-[Website](https://page-replica.com) • [GitHub](https://github.com/Page-Replica/pure-html-for-rag) • [npm](https://www.npmjs.com/package/pure-html-for-rag)
+[Website](https://page-replica.com) • [GitHub](https://github.com/Page-Replica/pure-html-for-rag) • [npm](https://www.npmjs.com/package/@page-replica/pure-html-for-rag)
 
 </div>

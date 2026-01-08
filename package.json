@@ -1,5 +1,5 @@
 {
-  "name": "pure-html-for-rag",
+  "name": "@page-replica/pure-html-for-rag",
   "version": "1.0.0",
   "description": "Aggressively clean HTML for RAG, LLM ingestion, and semantic extraction",
   "main": "src/index.js",
