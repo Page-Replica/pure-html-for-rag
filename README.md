@@ -16,6 +16,10 @@ Transform bloated web pages into pure, semantic HTML perfect for embeddings, vec
 
 ---
 
+> 🚀 **Used in Production:** This library powers [page-replica.com](https://page-replica.com)'s structured scraping engine. See it in action with our [live demo](https://page-replica.com/structured/live-demo) to extract and structure real web pages into clean JSON, Markdown, or HTML.
+
+---
+
 ## Why?
 
 Modern web pages are cluttered with tracking scripts, analytics, styling, ads, and interactive elements that **waste tokens** and **dilute semantic meaning** when processing content for AI systems. This library strips away the noise to give you clean, meaningful HTML that:
@@ -337,11 +341,24 @@ Cleaned size:   12,441 bytes (87.9% reduction)
 Processing time: 3.2ms
 ```
 
-## License
+# Page Replica Structured Scraping - Live Demo
+![Page Replica Structured Scraping Demo](https://private-user-images.githubusercontent.com/2590579/344511599-d606e994-b6ac-4235-9ff6-5ec7a76fa095.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njc4MjA3MjQsIm5iZiI6MTc2NzgyMDQyNCwicGF0aCI6Ii8yNTkwNTc5LzM0NDUxMTU5OS1kNjA2ZTk5NC1iNmFjLTQyMzUtOWZmNi01ZWM3YTc2ZmEwOTUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDEwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAxMDdUMjExMzQ0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzE3Y2QxN2Y5ZDBiODNhM2JhMjc4YTY5MWY3ZDk0OTE4YjhkOGI0ZjA4ZjcwOTc1YTIwMTIzYjAzNGI2YTk0OCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.jyyEq9HXtcEtzGJlMFcQY8zy09gKYfOGknGrFuIR33A)
 
-MIT © [page-replica.com](https://page-replica.com)
+
+
+## Good news everyone 🙂
+
+If you just want to see how the structured cleanup works without
+setting anything up locally, you can try the live demo.
+
+It lets you experiment with structuring real pages into JSON,
+Markdown, or low-noise HTML, which is useful if you need to
+quickly inspect or structure page content.
+
+https://page-replica.com/structured/live-demo
 
 ---
+
 
 <div align="center">
 
